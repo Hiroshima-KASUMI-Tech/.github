@@ -1,0 +1,9 @@
+blank_issues_enabled: true
+contact_links:
+  - name: KASUMI Tech. について
+    url: https://github.com/KASUMI-Tech/.github
+    about: 組織の概要や活動内容についてはこちらをご覧ください
+  - name: 団体規約
+    url: https://github.com/KASUMI-Tech/.github/blob/main/団体規約.md
+    about: 団体規約を確認する
+

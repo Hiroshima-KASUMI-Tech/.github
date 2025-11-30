@@ -1,0 +1,30 @@
+# 組織レベルのGitHub Actionsワークフロー例
+# このファイルは、組織内のすべてのリポジトリで利用可能なワークフローのテンプレートです
+# 各リポジトリで必要に応じてカスタマイズしてください
+
+name: Example Workflow
+
+on:
+  # プッシュ時のトリガー
+  push:
+    branches: [ main, develop ]
+  # プルリクエスト時のトリガー
+  pull_request:
+    branches: [ main, develop ]
+  # 手動実行
+  workflow_dispatch:
+
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup
+      run: echo "ワークフローのセットアップをここに記述"
+      
+    - name: Example step
+      run: echo "実行したい処理をここに記述"
+
